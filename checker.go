@@ -40,7 +40,7 @@ func (gen *GenChecker) Check() (string, error) {
 func init() {
 	once.Do(func() {
 		if checklist == nil {
-			checklist = make(map[string]string)
+			checklist = make(map[string]Checker)
 		}
 	})
 	checklist["Gen"] = &GenChecker{}
