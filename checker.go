@@ -13,8 +13,8 @@ var (
 	once      sync.Once
 )
 
-//AllCheck do all check and return check result
-func AllCheck() map[string]string {
+//Check do all check and return check result
+func Check() map[string]string {
 	result := make(map[string]string, len(checklist))
 
 	for k, v := range checklist {
@@ -27,6 +27,16 @@ func AllCheck() map[string]string {
 	}
 
 	return result
+}
+
+//Register regist a checker
+func Register(name string, checker Checker) {
+	checklist[name] = checker
+}
+
+//Unregister regist a checker
+func Unregister(name string) {
+	delete(checklist, name)
 }
 
 //GenChecker generic checker
