@@ -54,7 +54,7 @@ func Unregister(name string) {
 //GenChecker generic checker
 type GenChecker struct{}
 
-//Check GenChecker return string "OK" and nil error
+//Check GenChecker return true and string "OK" as Status result
 func (gen *GenChecker) Check() Status {
 	return Status{Pass: true, Msg: "OK"}
 }
