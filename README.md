@@ -1,0 +1,2 @@
+# hcheck
+generic health check
