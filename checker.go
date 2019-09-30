@@ -1,12 +1,17 @@
 package hcheck
 
+import "sync"
+
 //Checker wrapped inspect method
 type Checker interface {
 	//Check function, do something inspect
 	Check() (string, error)
 }
 
-var checklist map[string]Checker
+var (
+	checklist map[string]Checker
+	once      sync.Once
+)
 
 //AllCheck do all check and return check result
 func AllCheck() map[string]string {
@@ -33,5 +38,10 @@ func (gen *GenChecker) Check() (string, error) {
 }
 
 func init() {
+	once.Do(func() {
+		if checklist == nil {
+			checklist = make(map[string]string)
+		}
+	})
 	checklist["Gen"] = &GenChecker{}
 }
