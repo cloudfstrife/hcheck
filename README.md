@@ -1,6 +1,6 @@
 # hcheck
 
-`hcheck`是一个用于检查应用健康的库。
+`hcheck` is a library for checking the health of components.
 
 ## go doc 
 
