@@ -1,0 +1,15 @@
+mode: set
+github.com/cloudfstrife/hcheck/checker.go:16.13,17.17 1 1
+github.com/cloudfstrife/hcheck/checker.go:17.17,18.22 1 1
+github.com/cloudfstrife/hcheck/checker.go:18.22,20.4 1 1
+github.com/cloudfstrife/hcheck/checker.go:25.32,30.29 3 1
+github.com/cloudfstrife/hcheck/checker.go:37.2,37.25 1 1
+github.com/cloudfstrife/hcheck/checker.go:41.2,41.15 1 1
+github.com/cloudfstrife/hcheck/checker.go:30.29,32.38 2 1
+github.com/cloudfstrife/hcheck/checker.go:35.3,35.15 1 1
+github.com/cloudfstrife/hcheck/checker.go:32.38,34.4 1 1
+github.com/cloudfstrife/hcheck/checker.go:37.25,40.3 2 1
+github.com/cloudfstrife/hcheck/checker.go:45.45,47.2 1 1
+github.com/cloudfstrife/hcheck/checker.go:50.30,52.2 1 1
+github.com/cloudfstrife/hcheck/gen_checker.go:7.39,9.2 1 1
+github.com/cloudfstrife/hcheck/gen_checker.go:11.13,13.2 1 1

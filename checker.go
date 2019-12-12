@@ -8,26 +8,26 @@ type Checker interface {
 	Check() Status
 }
 
-//Status wrap check result
-type Status struct {
-	//Pass flag
-	Pass bool
-	//Msg check result message
-	Msg string
-}
-
 var (
-	checklist map[string]Checker
-	once      sync.Once
+	checkers map[string]Checker
+	once     sync.Once
 )
+
+func init() {
+	once.Do(func() {
+		if checkers == nil {
+			checkers = make(map[string]Checker)
+		}
+	})
+}
 
 //Check do all check and return check result
 func Check() map[string]Status {
-	result := make(map[string]Status, len(checklist))
+	result := make(map[string]Status, len(checkers))
 
-	cmap := make(map[string]chan Status, len(checklist))
+	cmap := make(map[string]chan Status, len(checkers))
 
-	for k, v := range checklist {
+	for k, v := range checkers {
 		sc := make(chan Status, 1)
 		go func(c Checker, cs chan Status) {
 			cs <- c.Check()
@@ -43,27 +43,10 @@ func Check() map[string]Status {
 
 //Register regist a checker
 func Register(name string, checker Checker) {
-	checklist[name] = checker
+	checkers[name] = checker
 }
 
 //Unregister regist a checker
 func Unregister(name string) {
-	delete(checklist, name)
-}
-
-//GenChecker generic checker
-type GenChecker struct{}
-
-//Check GenChecker return true and string "OK" as Status result
-func (gen *GenChecker) Check() Status {
-	return Status{Pass: true, Msg: "OK"}
-}
-
-func init() {
-	once.Do(func() {
-		if checklist == nil {
-			checklist = make(map[string]Checker)
-		}
-	})
-	checklist["Gen"] = &GenChecker{}
+	delete(checkers, name)
 }
