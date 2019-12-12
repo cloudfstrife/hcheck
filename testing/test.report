@@ -1,0 +1,19 @@
+{"Time":"2019-12-12T19:02:27.7385807+08:00","Action":"run","Package":"github.com/cloudfstrife/hcheck","Test":"TestRegister"}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"output","Package":"github.com/cloudfstrife/hcheck","Test":"TestRegister","Output":"=== RUN   TestRegister\n"}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"output","Package":"github.com/cloudfstrife/hcheck","Test":"TestRegister","Output":"--- PASS: TestRegister (0.00s)\n"}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"pass","Package":"github.com/cloudfstrife/hcheck","Test":"TestRegister","Elapsed":0}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"run","Package":"github.com/cloudfstrife/hcheck","Test":"TestUnregister"}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"output","Package":"github.com/cloudfstrife/hcheck","Test":"TestUnregister","Output":"=== RUN   TestUnregister\n"}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"output","Package":"github.com/cloudfstrife/hcheck","Test":"TestUnregister","Output":"--- PASS: TestUnregister (0.00s)\n"}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"pass","Package":"github.com/cloudfstrife/hcheck","Test":"TestUnregister","Elapsed":0}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"run","Package":"github.com/cloudfstrife/hcheck","Test":"TestCheck"}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"output","Package":"github.com/cloudfstrife/hcheck","Test":"TestCheck","Output":"=== RUN   TestCheck\n"}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"output","Package":"github.com/cloudfstrife/hcheck","Test":"TestCheck","Output":"--- PASS: TestCheck (0.00s)\n"}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"pass","Package":"github.com/cloudfstrife/hcheck","Test":"TestCheck","Elapsed":0}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"run","Package":"github.com/cloudfstrife/hcheck","Test":"TestGenCheck"}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"output","Package":"github.com/cloudfstrife/hcheck","Test":"TestGenCheck","Output":"=== RUN   TestGenCheck\n"}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"output","Package":"github.com/cloudfstrife/hcheck","Test":"TestGenCheck","Output":"--- PASS: TestGenCheck (0.00s)\n"}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"pass","Package":"github.com/cloudfstrife/hcheck","Test":"TestGenCheck","Elapsed":0}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"output","Package":"github.com/cloudfstrife/hcheck","Output":"PASS\n"}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"output","Package":"github.com/cloudfstrife/hcheck","Output":"ok  \tgithub.com/cloudfstrife/hcheck\t0.217s\n"}
+{"Time":"2019-12-12T19:02:27.766506+08:00","Action":"pass","Package":"github.com/cloudfstrife/hcheck","Elapsed":0.217}

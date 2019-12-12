@@ -6,10 +6,6 @@ import (
 
 //TestChecker checker
 type TestChecker struct {
-	server   string
-	port     int
-	username string
-	password string
 }
 
 //Check Testing
